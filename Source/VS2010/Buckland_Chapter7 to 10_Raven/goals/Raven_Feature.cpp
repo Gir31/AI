@@ -111,19 +111,23 @@ double Raven_Feature::Health(Raven_Bot* pBot)
 //-----------------------------------------------------------------------------
 double Raven_Feature::ClosenessToLastNoise(Raven_Bot* pBot)
 {
-    // 1. 가장 최근 감지된 위치를 가져옵니다.
-    const Vector2D LastPos = pBot->GetSensoryMem()->GetMostRecentlySensedPosition();
+    // 1. 가장 최근 감지된 시간 가져오기
+    double LastTime = pBot->GetSensoryMem()->GetMostRecentlySensedTime();
+    double CurrentTime = Clock->GetCurrentTime();
 
-    // 2. 현재 위치와의 거리를 계산합니다.
+    // 중요: 소리를 들은지 일정 시간(예: 10초)이 지났으면 무시 (0점 반환)
+    const double TimeThreshold = 10.0;
+    if ((CurrentTime - LastTime) > TimeThreshold)
+    {
+        return 0.0;
+    }
+
+    // 2. 위치 가져오기 및 거리 계산 (기존 코드 유지)
+    const Vector2D LastPos = pBot->GetSensoryMem()->GetMostRecentlySensedPosition();
     double Dist = Vec2DDistance(pBot->Pos(), LastPos);
 
-    // 3. 점수 계산을 위한 범위 설정 (예: 500 unit 이상이면 0점)
     const double MaxDistance = 500.0;
-
-    // 4. 거리가 0이면(즉, 정보가 없거나 바로 그 위치라면) 1 반환
-    //    거리가 MaxDistance 이상이면 0 반환
     if (Dist > MaxDistance) return 0.0;
 
-    // 5. 선형 보간: 거리가 가까울수록 1에 가깝게
     return 1.0 - (Dist / MaxDistance);
 }

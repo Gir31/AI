@@ -106,7 +106,10 @@ public:
   double    GetTimeSinceLastSensed(Raven_Bot* pOpponent)const;
   double    GetTimeOpponentHasBeenOutOfView(Raven_Bot* pOpponent)const;
 
-  Vector2D GetMostRecentlySensedPosition() const; 
+  //===================================================================
+  Vector2D GetMostRecentlySensedPosition() const;
+  double GetMostRecentlySensedTime() const;
+  //===================================================================
 
   //this method returns a list of all the opponents that have had their
   //records updated within the last m_dMemorySpan seconds.

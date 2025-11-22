@@ -21,7 +21,8 @@ double InvestigateNoiseGoal_Evaluator::CalculateDesirability(Raven_Bot* pBot)
     }
 
     // 2. 눈앞에 적이 있으면(TargetPresent) 소리 추적보다 전투가 우선이므로 0점
-    if (pBot->GetTargetSys()->isTargetPresent())
+    if (pBot->GetTargetSys()->isTargetPresent() 
+        && pBot->GetTargetSys()->isTargetWithinFOV())
     {
         return 0.0;
     }

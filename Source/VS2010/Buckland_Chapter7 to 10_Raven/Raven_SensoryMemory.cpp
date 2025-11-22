@@ -303,3 +303,18 @@ Vector2D Raven_SensoryMemory::GetMostRecentlySensedPosition() const
     if (bFound) return LatestPos;
     return m_pOwner->Pos();
 }
+// Raven_SensoryMemory.cpp
+double Raven_SensoryMemory::GetMostRecentlySensedTime() const
+{
+    double LatestTime = -1000; // 아주 옛날로 초기화
+
+    MemoryMap::const_iterator curRecord = m_MemoryMap.begin();
+    for (curRecord; curRecord != m_MemoryMap.end(); ++curRecord)
+    {
+        if (curRecord->second.fTimeLastSensed > LatestTime)
+        {
+            LatestTime = curRecord->second.fTimeLastSensed;
+        }
+    }
+    return LatestTime;
+}

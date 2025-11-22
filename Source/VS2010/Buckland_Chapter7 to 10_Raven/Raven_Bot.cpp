@@ -385,6 +385,19 @@ void Raven_Bot::ChangeWeapon(unsigned int type)
 void Raven_Bot::FireWeapon(Vector2D pos)
 {
   m_pWeaponSys->ShootAt(pos);
+
+  const std::list<Raven_Bot*>& bots = GetWorld()->GetAllBots();
+
+  std::list<Raven_Bot*>::const_iterator curBot;
+  for (curBot = bots.begin(); curBot != bots.end(); ++curBot)
+  {
+      // 자기 자신에게는 소리 전달 안 함
+      if ((*curBot) != this)
+      {
+          // 다른 봇의 감각 기억(SensoryMemory)에 "내가 소리 냈어!"라고 등록
+          (*curBot)->GetSensoryMem()->UpdateWithSoundSource(this);
+      }
+  }
 }
 
 //----------------- CalculateExpectedTimeToReachPosition ----------------------
