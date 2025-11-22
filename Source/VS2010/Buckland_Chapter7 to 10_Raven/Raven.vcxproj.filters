@@ -268,6 +268,12 @@
     <ClCompile Include="..\Common\misc\WindowUtils.cpp">
       <Filter>Common</Filter>
     </ClCompile>
+    <ClCompile Include="goals\InvestigateNoiseGoal_Evaluator.cpp">
+      <Filter>AI\goals\goal evaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="goals\Goal_InvestigateNoise.cpp">
+      <Filter>AI\goals\composite</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Raven_Bot.h">
@@ -605,6 +611,12 @@
     </ClInclude>
     <ClInclude Include="..\Common\misc\WindowUtils.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="goals\InvestigateNoiseGoal_Evaluator.h">
+      <Filter>AI\goals\goal evaluation</Filter>
+    </ClInclude>
+    <ClInclude Include="goals\Goal_InvestigateNoise.h">
+      <Filter>AI\goals\composite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,55 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\",
+  "WorkspaceRootPath": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\script\\Scriptor.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\Regulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\CrudeTimer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_InvestigateNoise.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\GetHealthGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\GetHealthGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_InvestigateNoise.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyVariable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\ExploreGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\ExploreGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\EntityManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\misc\\CellSpacePartition.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\BaseGameEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\AttackTargetGoal_Evaluator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:Raven_SensoryMemory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,201 +34,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Scriptor.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\script\\Scriptor.h",
-              "RelativeDocumentMoniker": "..\\Common\\script\\Scriptor.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\script\\Scriptor.h",
-              "RelativeToolTip": "..\\Common\\script\\Scriptor.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:37.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Regulator.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\Regulator.h",
-              "RelativeDocumentMoniker": "..\\Common\\Time\\Regulator.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\Regulator.h",
-              "RelativeToolTip": "..\\Common\\Time\\Regulator.h",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:36.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetHealthGoal_Evaluator.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\GetHealthGoal_Evaluator.h",
-              "RelativeDocumentMoniker": "goals\\GetHealthGoal_Evaluator.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\GetHealthGoal_Evaluator.h",
-              "RelativeToolTip": "goals\\GetHealthGoal_Evaluator.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:27.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FuzzyVariable.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyVariable.h",
-              "RelativeDocumentMoniker": "..\\Common\\fuzzy\\FuzzyVariable.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyVariable.h",
-              "RelativeToolTip": "..\\Common\\fuzzy\\FuzzyVariable.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:27.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FuzzyModule.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.h",
-              "RelativeDocumentMoniker": "..\\Common\\fuzzy\\FuzzyModule.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.h",
-              "RelativeToolTip": "..\\Common\\fuzzy\\FuzzyModule.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:27.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FuzzyModule.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.cpp",
-              "RelativeDocumentMoniker": "..\\Common\\fuzzy\\FuzzyModule.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\fuzzy\\FuzzyModule.cpp",
-              "RelativeToolTip": "..\\Common\\fuzzy\\FuzzyModule.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T05:26:26.73Z",
+              "WhenOpened": "2025-11-22T09:15:26.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ExploreGoal_Evaluator.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\ExploreGoal_Evaluator.h",
-              "RelativeDocumentMoniker": "goals\\ExploreGoal_Evaluator.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\ExploreGoal_Evaluator.h",
-              "RelativeToolTip": "goals\\ExploreGoal_Evaluator.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:26.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EntityManager.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\EntityManager.h",
-              "RelativeDocumentMoniker": "..\\Common\\Game\\EntityManager.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\EntityManager.h",
-              "RelativeToolTip": "..\\Common\\Game\\EntityManager.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:25.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DebugConsole.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.h",
-              "RelativeDocumentMoniker": "..\\Common\\Debug\\DebugConsole.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.h",
-              "RelativeToolTip": "..\\Common\\Debug\\DebugConsole.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:25.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DebugConsole.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.cpp",
-              "RelativeDocumentMoniker": "..\\Common\\Debug\\DebugConsole.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Debug\\DebugConsole.cpp",
-              "RelativeToolTip": "..\\Common\\Debug\\DebugConsole.cpp",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Goal_Think.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
+              "RelativeDocumentMoniker": "goals\\Goal_Think.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
+              "RelativeToolTip": "goals\\Goal_Think.cpp",
+              "ViewState": "AgIAALoAAAAAAAAAAAAAAMQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T05:26:24.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CrudeTimer.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\CrudeTimer.h",
-              "RelativeDocumentMoniker": "..\\Common\\Time\\CrudeTimer.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Time\\CrudeTimer.h",
-              "RelativeToolTip": "..\\Common\\Time\\CrudeTimer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:24.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CellSpacePartition.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\misc\\CellSpacePartition.h",
-              "RelativeDocumentMoniker": "..\\Common\\misc\\CellSpacePartition.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\misc\\CellSpacePartition.h",
-              "RelativeToolTip": "..\\Common\\misc\\CellSpacePartition.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:22.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BaseGameEntity.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\BaseGameEntity.h",
-              "RelativeDocumentMoniker": "..\\Common\\Game\\BaseGameEntity.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Common\\Game\\BaseGameEntity.h",
-              "RelativeToolTip": "..\\Common\\Game\\BaseGameEntity.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:22.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AttackTargetGoal_Evaluator.h",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.h",
-              "RelativeDocumentMoniker": "goals\\AttackTargetGoal_Evaluator.h",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.h",
-              "RelativeToolTip": "goals\\AttackTargetGoal_Evaluator.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-22T05:26:21.021Z",
+              "WhenOpened": "2025-11-22T09:09:57.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Title": "Goal_InvestigateNoise.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.cpp",
+              "RelativeDocumentMoniker": "goals\\Goal_InvestigateNoise.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.cpp",
+              "RelativeToolTip": "goals\\Goal_InvestigateNoise.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T05:25:43.02Z",
+              "WhenOpened": "2025-11-22T09:06:47.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Goal_InvestigateNoise.h",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.h",
+              "RelativeDocumentMoniker": "goals\\Goal_InvestigateNoise.h",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_InvestigateNoise.h",
+              "RelativeToolTip": "goals\\Goal_InvestigateNoise.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-22T09:06:10.331Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 180,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "ea8a8bb3-9f49-41c3-a472-780d92b9a1f7",
+        "Display": 0,
+        "X": -113,
+        "Y": 449,
+        "Width": 743,
+        "Height": 873,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Raven_SensoryMemory.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp",
+              "RelativeDocumentMoniker": "Raven_SensoryMemory.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp",
+              "RelativeToolTip": "Raven_SensoryMemory.cpp",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAQwCUBAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-22T08:35:58.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InvestigateNoiseGoal_Evaluator.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp",
+              "RelativeDocumentMoniker": "goals\\InvestigateNoiseGoal_Evaluator.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp",
+              "RelativeToolTip": "goals\\InvestigateNoiseGoal_Evaluator.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-22T08:57:46.754Z",
               "EditorCaption": ""
             }
           ]

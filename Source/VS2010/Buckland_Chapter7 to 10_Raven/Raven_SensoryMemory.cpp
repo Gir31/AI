@@ -279,3 +279,27 @@ void  Raven_SensoryMemory::RenderBoxesAroundRecentlySensed()const
   }
 
 }
+
+//-----------------------------------------------------------------------------
+Vector2D Raven_SensoryMemory::GetMostRecentlySensedPosition() const
+{
+    double LatestTime = 0;
+    Vector2D LatestPos = Vector2D(0, 0); // 기본값 (없을 경우)
+    bool bFound = false;
+
+    MemoryMap::const_iterator curRecord = m_MemoryMap.begin();
+    for (curRecord; curRecord != m_MemoryMap.end(); ++curRecord)
+    {
+        // 가장 최근에 감지된 기록을 찾습니다.
+        if (curRecord->second.fTimeLastSensed > LatestTime)
+        {
+            LatestTime = curRecord->second.fTimeLastSensed;
+            LatestPos = curRecord->second.vLastSensedPosition;
+            bFound = true;
+        }
+    }
+
+    // 기록이 하나라도 있다면 그 위치를 반환, 없다면 봇의 현재 위치(혹은 의미 없는 값) 반환
+    if (bFound) return LatestPos;
+    return m_pOwner->Pos();
+}

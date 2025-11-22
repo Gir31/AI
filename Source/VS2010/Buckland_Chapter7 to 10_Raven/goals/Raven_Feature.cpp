@@ -1,5 +1,6 @@
 #include "Raven_Feature.h"
 #include "../Raven_Bot.h"
+#include "../Raven_SensoryMemory.h"
 #include "../navigation/Raven_PathPlanner.h"
 #include "../armory/Raven_Weapon.h"
 #include "../Raven_WeaponSystem.h"
@@ -103,4 +104,26 @@ double Raven_Feature::Health(Raven_Bot* pBot)
 {
   return (double)pBot->Health() / (double)pBot->MaxHealth();
 
+}
+
+//------------------------------- NoiseScore ---------------------------------
+//
+//-----------------------------------------------------------------------------
+double Raven_Feature::ClosenessToLastNoise(Raven_Bot* pBot)
+{
+    // 1. 가장 최근 감지된 위치를 가져옵니다.
+    const Vector2D LastPos = pBot->GetSensoryMem()->GetMostRecentlySensedPosition();
+
+    // 2. 현재 위치와의 거리를 계산합니다.
+    double Dist = Vec2DDistance(pBot->Pos(), LastPos);
+
+    // 3. 점수 계산을 위한 범위 설정 (예: 500 unit 이상이면 0점)
+    const double MaxDistance = 500.0;
+
+    // 4. 거리가 0이면(즉, 정보가 없거나 바로 그 위치라면) 1 반환
+    //    거리가 MaxDistance 이상이면 0 반환
+    if (Dist > MaxDistance) return 0.0;
+
+    // 5. 선형 보간: 거리가 가까울수록 1에 가깝게
+    return 1.0 - (Dist / MaxDistance);
 }

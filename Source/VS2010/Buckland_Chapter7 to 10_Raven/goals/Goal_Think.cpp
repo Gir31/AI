@@ -11,12 +11,14 @@
 #include "Goal_Wander.h"
 #include "Raven_Goal_Types.h"
 #include "Goal_AttackTarget.h"
+#include "Goal_InvestigateNoise.h"
 
 
 #include "GetWeaponGoal_Evaluator.h"
 #include "GetHealthGoal_Evaluator.h"
 #include "ExploreGoal_Evaluator.h"
 #include "AttackTargetGoal_Evaluator.h"
+#include "InvestigateNoiseGoal_Evaluator.h"
 
 
 Goal_Think::Goal_Think(Raven_Bot* pBot):Goal_Composite<Raven_Bot>(pBot, goal_think)
@@ -33,6 +35,7 @@ Goal_Think::Goal_Think(Raven_Bot* pBot):Goal_Composite<Raven_Bot>(pBot, goal_thi
   double RailgunBias = RandInRange(LowRangeOfBias, HighRangeOfBias);
   double ExploreBias = RandInRange(LowRangeOfBias, HighRangeOfBias);
   double AttackBias = RandInRange(LowRangeOfBias, HighRangeOfBias);
+  double InvestigateBias = RandInRange(LowRangeOfBias, HighRangeOfBias); 
 
   //create the evaluator objects
   m_Evaluators.push_back(new GetHealthGoal_Evaluator(HealthBias));
@@ -44,6 +47,7 @@ Goal_Think::Goal_Think(Raven_Bot* pBot):Goal_Composite<Raven_Bot>(pBot, goal_thi
                                                      type_rail_gun));
   m_Evaluators.push_back(new GetWeaponGoal_Evaluator(RocketLauncherBias,
                                                      type_rocket_launcher));
+  m_Evaluators.push_back(new InvestigateNoiseGoal_Evaluator(InvestigateBias)); 
 }
 
 //----------------------------- dtor ------------------------------------------
@@ -166,6 +170,19 @@ void Goal_Think::AddGoal_AttackTarget()
   }
 }
 
+void Goal_Think::AddGoal_InvestigateNoise()
+{
+    // 1. 이미 이 목표(소리 조사)를 수행 중이라면 중복해서 추가하지 않음 (notPresent 체크)
+    if (notPresent(goal_investigate_noise))
+    {
+        // 2. 기존의 하위 목표들을 모두 지움 (하던 일 중단)
+        RemoveAllSubgoals();
+
+        // 3. 새로운 소리 조사 목표를 추가
+        AddSubgoal(new Goal_InvestigateNoise(m_pOwner));
+    }
+}
+
 //-------------------------- Queue Goals --------------------------------------
 //-----------------------------------------------------------------------------
 void Goal_Think::QueueGoal_MoveToPosition(Vector2D pos)
@@ -187,6 +204,12 @@ void Goal_Think::RenderEvaluations(int left, int top)const
     (*curDes)->RenderInfo(Vector2D(left, top), m_pOwner);
 
     left += 75;
+
+    if (left > 400)
+    {
+        left = 5;       // 다시 왼쪽 끝으로
+        top += 12;      // 한 줄 아래로 (글자 높이에 맞춰 조정)
+    }
   }
 }
 
