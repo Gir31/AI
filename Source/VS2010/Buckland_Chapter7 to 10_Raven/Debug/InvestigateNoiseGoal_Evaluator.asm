@@ -25,16 +25,16 @@ CONST	SEGMENT
 	DD	0ffff00H
 	DD	0c8c8c8H
 	DD	0e6e6ffH
-$SG167582 DB	'IN: ', 00H
+$SG167590 DB	'IN: ', 00H
 	ORG $+3
-$SG175866 DB	'invalid argument', 00H
+$SG175874 DB	'invalid argument', 00H
 	ORG $+3
-$SG175867 DB	'%s', 00H
+$SG175875 DB	'%s', 00H
 	ORG $+5
-$SG175868 DB	'C:\Program Files\Microsoft Visual Studio\2022\Community\'
+$SG175876 DB	'C:\Program Files\Microsoft Visual Studio\2022\Community\'
 	DB	'VC\Tools\MSVC\14.42.34433\include\xmemory', 00H
 	ORG $+6
-$SG175869 DB	'C', 00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H
+$SG175877 DB	'C', 00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H
 	DB	'g', 00H, 'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'F', 00H, 'i'
 	DB	00H, 'l', 00H, 'e', 00H, 's', 00H, '\', 00H, 'M', 00H, 'i', 00H
 	DB	'c', 00H, 'r', 00H, 'o', 00H, 's', 00H, 'o', 00H, 'f', 00H, 't'
@@ -50,13 +50,13 @@ $SG175869 DB	'C', 00H, ':', 00H, '\', 00H, 'P', 00H, 'r', 00H, 'o', 00H
 	DB	'c', 00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'x'
 	DB	00H, 'm', 00H, 'e', 00H, 'm', 00H, 'o', 00H, 'r', 00H, 'y', 00H
 	DB	00H, 00H
-$SG175870 DB	00H, 00H
+$SG175878 DB	00H, 00H
 	ORG $+2
-$SG175871 DB	'"', 00H, 'i', 00H, 'n', 00H, 'v', 00H, 'a', 00H, 'l', 00H
+$SG175879 DB	'"', 00H, 'i', 00H, 'n', 00H, 'v', 00H, 'a', 00H, 'l', 00H
 	DB	'i', 00H, 'd', 00H, ' ', 00H, 'a', 00H, 'r', 00H, 'g', 00H, 'u'
 	DB	00H, 'm', 00H, 'e', 00H, 'n', 00H, 't', 00H, '"', 00H, 00H, 00H
 	ORG $+2
-$SG175923 DB	'C:\Program Files\Microsoft Visual Studio\2022\Community\'
+$SG175931 DB	'C:\Program Files\Microsoft Visual Studio\2022\Community\'
 	DB	'VC\Tools\MSVC\14.42.34433\include\xlocale', 00H
 	ORG $+2
 ?_Valid_strftime_specifiers@std@@3QBDB DB 061H		; std::_Valid_strftime_specifiers
@@ -313,9 +313,15 @@ PUBLIC	??0ios_base@std@@IAE@XZ				; std::ios_base::ios_base
 PUBLIC	?_Init@ios_base@std@@IAEXXZ			; std::ios_base::_Init
 PUBLIC	??_Gios_base@std@@UAEPAXI@Z			; std::ios_base::`scalar deleting destructor'
 PUBLIC	?fixed@std@@YAAAVios_base@1@AAV21@@Z		; std::fixed
+PUBLIC	?DistanceSq@Vector2D@@QBENABU1@@Z		; Vector2D::DistanceSq
+PUBLIC	?Pos@BaseGameEntity@@QBE?AUVector2D@@XZ		; BaseGameEntity::Pos
+PUBLIC	?BRadius@BaseGameEntity@@QBENXZ			; BaseGameEntity::BRadius
 PUBLIC	?isTargetPresent@Raven_TargetingSystem@@QBE_NXZ	; Raven_TargetingSystem::isTargetPresent
+PUBLIC	?GetTarget@Raven_TargetingSystem@@QBEPAVRaven_Bot@@XZ ; Raven_TargetingSystem::GetTarget
 PUBLIC	?GetBrain@Raven_Bot@@QAEQAVGoal_Think@@XZ	; Raven_Bot::GetBrain
 PUBLIC	?GetTargetSys@Raven_Bot@@QAEQAVRaven_TargetingSystem@@XZ ; Raven_Bot::GetTargetSys
+PUBLIC	?GetTargetBot@Raven_Bot@@QBEQAV1@XZ		; Raven_Bot::GetTargetBot
+PUBLIC	?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ ; Raven_Bot::GetSensoryMem
 PUBLIC	?CalculateDesirability@InvestigateNoiseGoal_Evaluator@@UAENPAVRaven_Bot@@@Z ; InvestigateNoiseGoal_Evaluator::CalculateDesirability
 PUBLIC	?SetGoal@InvestigateNoiseGoal_Evaluator@@UAEXPAVRaven_Bot@@@Z ; InvestigateNoiseGoal_Evaluator::SetGoal
 PUBLIC	?RenderInfo@InvestigateNoiseGoal_Evaluator@@UAEXUVector2D@@PAVRaven_Bot@@@Z ; InvestigateNoiseGoal_Evaluator::RenderInfo
@@ -728,6 +734,7 @@ PUBLIC	??_R2?$numpunct@D@std@@8			; std::numpunct<char>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$numpunct@D@std@@8		; std::numpunct<char>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	__real@0000000000000000
 PUBLIC	__real@3ff0000000000000
+PUBLIC	__real@3ff8000000000000
 PUBLIC	__real@4202a05f20000000
 EXTRN	__purecall:PROC
 EXTRN	??2@YAPAXI@Z:PROC				; operator new
@@ -789,10 +796,11 @@ EXTRN	?_Addstd@ios_base@std@@SAXPAV12@@Z:PROC		; std::ios_base::_Addstd
 EXTRN	?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z:PROC	; std::ios_base::_Ios_base_dtor
 EXTRN	??_Eios_base@std@@UAEPAXI@Z:PROC		; std::ios_base::`vector deleting destructor'
 EXTRN	?setprecision@std@@YA?AU?$_Smanip@_J@1@_J@Z:PROC ; std::setprecision
-EXTRN	?isTargetWithinFOV@Raven_TargetingSystem@@QBE_NXZ:PROC ; Raven_TargetingSystem::isTargetWithinFOV
 EXTRN	?Instance@Cgdi@@SAPAV1@XZ:PROC			; Cgdi::Instance
 EXTRN	?AddGoal_InvestigateNoise@Goal_Think@@QAEXXZ:PROC ; Goal_Think::AddGoal_InvestigateNoise
 EXTRN	?ClosenessToLastNoise@Raven_Feature@@SANPAVRaven_Bot@@@Z:PROC ; Raven_Feature::ClosenessToLastNoise
+EXTRN	?isOpponentWithinFOV@Raven_SensoryMemory@@QBE_NPAVRaven_Bot@@@Z:PROC ; Raven_SensoryMemory::isOpponentWithinFOV
+EXTRN	?GetMostRecentlySensedPosition@Raven_SensoryMemory@@QBE?AUVector2D@@XZ:PROC ; Raven_SensoryMemory::GetMostRecentlySensedPosition
 EXTRN	??_E?$basic_ios@DU?$char_traits@D@std@@@std@@UAEPAXI@Z:PROC ; std::basic_ios<char,std::char_traits<char> >::`vector deleting destructor'
 EXTRN	??_E?$basic_ostream@DU?$char_traits@D@std@@@std@@UAEPAXI@Z:PROC ; std::basic_ostream<char,std::char_traits<char> >::`vector deleting destructor'
 EXTRN	??_E?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAEPAXI@Z:PROC ; std::basic_streambuf<char,std::char_traits<char> >::`vector deleting destructor'
@@ -844,6 +852,10 @@ CRT$XCU	ENDS
 ;	COMDAT __real@4202a05f20000000
 CONST	SEGMENT
 __real@4202a05f20000000 DQ 04202a05f20000000r	; 1e+10
+CONST	ENDS
+;	COMDAT __real@3ff8000000000000
+CONST	SEGMENT
+__real@3ff8000000000000 DQ 03ff8000000000000r	; 1.5
 CONST	ENDS
 ;	COMDAT __real@3ff0000000000000
 CONST	SEGMENT
@@ -3469,7 +3481,7 @@ ___formal$ = 16						; size = 4
 ; 515  :     _Elem* _Ptrdest = static_cast<_Elem*>(_calloc_dbg(_Count, sizeof(_Elem), _CRT_BLOCK, __FILE__, __LINE__));
 
 	push	515					; 00000203H
-	push	OFFSET $SG175923
+	push	OFFSET $SG175931
 	push	2
 	push	1
 	mov	ecx, DWORD PTR __Count$[ebp]
@@ -3694,11 +3706,11 @@ $LN4@Allocate_m:
 	je	SHORT $LN9@Allocate_m
 	jmp	SHORT $LN6@Allocate_m
 $LN9@Allocate_m:
-	push	OFFSET $SG175866
-	push	OFFSET $SG175867
+	push	OFFSET $SG175874
+	push	OFFSET $SG175875
 	push	0
 	push	159					; 0000009fH
-	push	OFFSET $SG175868
+	push	OFFSET $SG175876
 	push	2
 	call	__CrtDbgReport
 	add	esp, 24					; 00000018H
@@ -3708,9 +3720,9 @@ $LN9@Allocate_m:
 $LN12@Allocate_m:
 	push	0
 	push	159					; 0000009fH
-	push	OFFSET $SG175869
-	push	OFFSET $SG175870
-	push	OFFSET $SG175871
+	push	OFFSET $SG175877
+	push	OFFSET $SG175878
+	push	OFFSET $SG175879
 	call	__invalid_parameter
 	add	esp, 20					; 00000014H
 	xor	ecx, ecx
@@ -20803,7 +20815,7 @@ _pBot$ = 24						; size = 4
 ?RenderInfo@InvestigateNoiseGoal_Evaluator@@UAEXUVector2D@@PAVRaven_Bot@@@Z PROC ; InvestigateNoiseGoal_Evaluator::RenderInfo
 ; _this$ = ecx
 
-; 53   : {
+; 70   : {
 
 	push	ebp
 	mov	ebp, esp
@@ -20828,7 +20840,7 @@ _pBot$ = 24						; size = 4
 	mov	DWORD PTR fs:0, eax
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 54   :     gdi->TextAtPos(Position, "IN: " + ttos(CalculateDesirability(pBot), 2));
+; 71   :     gdi->TextAtPos(Position, "IN: " + ttos(CalculateDesirability(pBot), 2));
 
 	mov	esi, esp
 	mov	eax, DWORD PTR _pBot$[ebp]
@@ -20854,7 +20866,7 @@ _pBot$ = 24						; size = 4
 	mov	DWORD PTR __$EHRec$[ebp+8], 0
 	mov	ecx, DWORD PTR tv90[ebp]
 	push	ecx
-	push	OFFSET $SG167582
+	push	OFFSET $SG167590
 	lea	edx, DWORD PTR $T3[ebp]
 	push	edx
 	call	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@QBD$$QAV10@@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
@@ -20886,7 +20898,7 @@ _pBot$ = 24						; size = 4
 	call	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
 	npad	1
 
-; 55   : }
+; 72   : }
 
 	mov	ecx, DWORD PTR __$EHRec$[ebp]
 	mov	DWORD PTR fs:0, ecx
@@ -20938,7 +20950,7 @@ _pBot$ = 8						; size = 4
 ?SetGoal@InvestigateNoiseGoal_Evaluator@@UAEXPAVRaven_Bot@@@Z PROC ; InvestigateNoiseGoal_Evaluator::SetGoal
 ; _this$ = ecx
 
-; 46   : {
+; 63   : {
 
 	push	ebp
 	mov	ebp, esp
@@ -20946,8 +20958,8 @@ _pBot$ = 8						; size = 4
 	mov	DWORD PTR [ebp-4], -858993460		; ccccccccH
 	mov	DWORD PTR _this$[ebp], ecx
 
-; 47   :     // *주의: Goal_Think 클래스에 AddGoal_InvestigateNoise() 함수를 추가해야 함
-; 48   :     pBot->GetBrain()->AddGoal_InvestigateNoise();
+; 64   :     // *주의: Goal_Think 클래스에 AddGoal_InvestigateNoise() 함수를 추가해야 함
+; 65   :     pBot->GetBrain()->AddGoal_InvestigateNoise();
 
 	mov	ecx, DWORD PTR _pBot$[ebp]
 	call	?GetBrain@Raven_Bot@@QAEQAVGoal_Think@@XZ ; Raven_Bot::GetBrain
@@ -20955,7 +20967,7 @@ _pBot$ = 8						; size = 4
 	call	?AddGoal_InvestigateNoise@Goal_Think@@QAEXXZ ; Goal_Think::AddGoal_InvestigateNoise
 	npad	1
 
-; 49   : }
+; 66   : }
 
 	add	esp, 4
 	cmp	ebp, esp
@@ -20968,7 +20980,14 @@ _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
 ; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\goals\InvestigateNoiseGoal_Evaluator.cpp
 _TEXT	SEGMENT
-_Tweaker$ = -28						; size = 8
+tv174 = -104						; size = 8
+tv166 = -96						; size = 8
+$T1 = -88						; size = 16
+_Tweaker$ = -72						; size = 8
+_StopDistanceSq$ = -64					; size = 8
+_StopRadius$ = -56					; size = 8
+_NoisePos$ = -44					; size = 16
+_pTarget$2 = -24					; size = 4
 _NoiseCloseness$ = -20					; size = 8
 _Desirability$ = -12					; size = 8
 _this$ = -4						; size = 4
@@ -20980,15 +20999,14 @@ _pBot$ = 8						; size = 4
 
 	push	ebp
 	mov	ebp, esp
-	sub	esp, 28					; 0000001cH
+	sub	esp, 104				; 00000068H
+	push	edi
+	push	ecx
+	lea	edi, DWORD PTR [ebp-104]
+	mov	ecx, 26					; 0000001aH
 	mov	eax, -858993460				; ccccccccH
-	mov	DWORD PTR [ebp-28], eax
-	mov	DWORD PTR [ebp-24], eax
-	mov	DWORD PTR [ebp-20], eax
-	mov	DWORD PTR [ebp-16], eax
-	mov	DWORD PTR [ebp-12], eax
-	mov	DWORD PTR [ebp-8], eax
-	mov	DWORD PTR [ebp-4], eax
+	rep stosd
+	pop	ecx
 	mov	DWORD PTR _this$[ebp], ecx
 
 ; 12   :     double Desirability = 0.0;
@@ -20997,7 +21015,7 @@ _pBot$ = 8						; size = 4
 	movsd	QWORD PTR _Desirability$[ebp], xmm0
 
 ; 13   : 
-; 14   :     // 1. 최근 감지된 소리가 얼마나 가까운지 가져옴 (0.0 ~ 1.0)
+; 14   :     // 1. 최근 감지된 소리 정보 가져오기
 ; 15   :     double NoiseCloseness = Raven_Feature::ClosenessToLastNoise(pBot);
 
 	mov	eax, DWORD PTR _pBot$[ebp]
@@ -21007,25 +21025,23 @@ _pBot$ = 8						; size = 4
 	fstp	QWORD PTR _NoiseCloseness$[ebp]
 
 ; 16   : 
-; 17   :     // 소리가 너무 멀거나(0.0) 없으면 관심 없음
-; 18   :     if (NoiseCloseness <= 0.0)
+; 17   :     if (NoiseCloseness <= 0.0)
 
 	xorps	xmm0, xmm0
 	comisd	xmm0, QWORD PTR _NoiseCloseness$[ebp]
 	jb	SHORT $LN2@CalculateD
 
-; 19   :     {
-; 20   :         return 0.0;
+; 18   :     {
+; 19   :         return 0.0;
 
 	fldz
 	jmp	$LN1@CalculateD
 $LN2@CalculateD:
 
-; 21   :     }
-; 22   : 
-; 23   :     // 2. 눈앞에 적이 있으면(TargetPresent) 소리 추적보다 전투가 우선이므로 0점
-; 24   :     if (pBot->GetTargetSys()->isTargetPresent() 
-; 25   :         && pBot->GetTargetSys()->isTargetWithinFOV())
+; 20   :     }
+; 21   : 
+; 22   :     // 2. (기존 코드) 눈앞에 적이 보이면 전투 우선
+; 23   :     if (pBot->GetTargetSys()->isTargetPresent())
 
 	mov	ecx, DWORD PTR _pBot$[ebp]
 	call	?GetTargetSys@Raven_Bot@@QAEQAVRaven_TargetingSystem@@XZ ; Raven_Bot::GetTargetSys
@@ -21033,80 +21049,222 @@ $LN2@CalculateD:
 	call	?isTargetPresent@Raven_TargetingSystem@@QBE_NXZ ; Raven_TargetingSystem::isTargetPresent
 	movzx	ecx, al
 	test	ecx, ecx
-	je	SHORT $LN3@CalculateD
-	mov	ecx, DWORD PTR _pBot$[ebp]
-	call	?GetTargetSys@Raven_Bot@@QAEQAVRaven_TargetingSystem@@XZ ; Raven_Bot::GetTargetSys
-	mov	ecx, eax
-	call	?isTargetWithinFOV@Raven_TargetingSystem@@QBE_NXZ ; Raven_TargetingSystem::isTargetWithinFOV
-	movzx	edx, al
-	test	edx, edx
-	je	SHORT $LN3@CalculateD
+	je	SHORT $LN4@CalculateD
 
-; 26   :     {
-; 27   :         return 0.0;
+; 24   :     {
+; 25   :         Raven_Bot* pTarget = pBot->GetTargetBot();
+
+	mov	ecx, DWORD PTR _pBot$[ebp]
+	call	?GetTargetBot@Raven_Bot@@QBEQAV1@XZ	; Raven_Bot::GetTargetBot
+	mov	DWORD PTR _pTarget$2[ebp], eax
+
+; 26   :         if (pTarget && pBot->GetSensoryMem()->isOpponentWithinFOV(pTarget))
+
+	cmp	DWORD PTR _pTarget$2[ebp], 0
+	je	SHORT $LN4@CalculateD
+	mov	edx, DWORD PTR _pTarget$2[ebp]
+	push	edx
+	mov	ecx, DWORD PTR _pBot$[ebp]
+	call	?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ ; Raven_Bot::GetSensoryMem
+	mov	ecx, eax
+	call	?isOpponentWithinFOV@Raven_SensoryMemory@@QBE_NPAVRaven_Bot@@@Z ; Raven_SensoryMemory::isOpponentWithinFOV
+	movzx	eax, al
+	test	eax, eax
+	je	SHORT $LN4@CalculateD
+
+; 27   :         {
+; 28   :             return 0.0;
+
+	fldz
+	jmp	$LN1@CalculateD
+$LN4@CalculateD:
+
+; 29   :         }
+; 30   :     }
+; 31   : 
+; 32   :     // ------------------------------------------------------------------------
+; 33   :     // [수정된 부분] 도착 판정 범위를 봇 크기의 1.5~2배 정도로 넉넉하게 잡습니다.
+; 34   :     // ------------------------------------------------------------------------
+; 35   :     Vector2D NoisePos = pBot->GetSensoryMem()->GetMostRecentlySensedPosition();
+
+	lea	ecx, DWORD PTR _NoisePos$[ebp]
+	push	ecx
+	mov	ecx, DWORD PTR _pBot$[ebp]
+	call	?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ ; Raven_Bot::GetSensoryMem
+	mov	ecx, eax
+	call	?GetMostRecentlySensedPosition@Raven_SensoryMemory@@QBE?AUVector2D@@XZ ; Raven_SensoryMemory::GetMostRecentlySensedPosition
+
+; 36   : 
+; 37   :     // BRadius()는 봇의 반지름입니다. 
+; 38   :     // "내 몸집만큼 근처에 왔으면 도착한 걸로 치자"라는 의미입니다.
+; 39   :     double StopRadius = pBot->BRadius() * 1.5;
+
+	mov	ecx, DWORD PTR _pBot$[ebp]
+	call	?BRadius@BaseGameEntity@@QBENXZ		; BaseGameEntity::BRadius
+	fstp	QWORD PTR tv166[ebp]
+	movsd	xmm0, QWORD PTR tv166[ebp]
+	mulsd	xmm0, QWORD PTR __real@3ff8000000000000
+	movsd	QWORD PTR _StopRadius$[ebp], xmm0
+
+; 40   :     double StopDistanceSq = StopRadius * StopRadius;
+
+	movsd	xmm0, QWORD PTR _StopRadius$[ebp]
+	mulsd	xmm0, QWORD PTR _StopRadius$[ebp]
+	movsd	QWORD PTR _StopDistanceSq$[ebp], xmm0
+
+; 41   : 
+; 42   :     // 거리가 이 범위 안이면 0점 반환 (도착했으므로 조사 종료)
+; 43   :     if (pBot->Pos().DistanceSq(NoisePos) < StopDistanceSq)
+
+	lea	edx, DWORD PTR _NoisePos$[ebp]
+	push	edx
+	lea	eax, DWORD PTR $T1[ebp]
+	push	eax
+	mov	ecx, DWORD PTR _pBot$[ebp]
+	call	?Pos@BaseGameEntity@@QBE?AUVector2D@@XZ	; BaseGameEntity::Pos
+	mov	ecx, eax
+	call	?DistanceSq@Vector2D@@QBENABU1@@Z	; Vector2D::DistanceSq
+	fstp	QWORD PTR tv174[ebp]
+	movsd	xmm0, QWORD PTR _StopDistanceSq$[ebp]
+	comisd	xmm0, QWORD PTR tv174[ebp]
+	jbe	SHORT $LN5@CalculateD
+
+; 44   :     {
+; 45   :         return 0.0;
 
 	fldz
 	jmp	SHORT $LN1@CalculateD
-$LN3@CalculateD:
+$LN5@CalculateD:
 
-; 28   :     }
-; 29   : 
-; 30   :     // 3. 점수 계산
-; 31   :     const double Tweaker = 1.0; // 기본 중요도
+; 46   :     }
+; 47   :     // ------------------------------------------------------------------------
+; 48   : 
+; 49   :     // 3. 점수 계산 (기존 로직)
+; 50   :     const double Tweaker = 1.0;
 
 	movsd	xmm0, QWORD PTR __real@3ff0000000000000
 	movsd	QWORD PTR _Tweaker$[ebp], xmm0
 
-; 32   :     Desirability = Tweaker * NoiseCloseness;
+; 51   :     Desirability = Tweaker * NoiseCloseness;
 
 	movsd	xmm0, QWORD PTR __real@3ff0000000000000
 	mulsd	xmm0, QWORD PTR _NoiseCloseness$[ebp]
 	movsd	QWORD PTR _Desirability$[ebp], xmm0
 
-; 33   : 
-; 34   :     // 4. 봇의 성격(Bias) 반영
-; 35   :     Desirability *= m_dCharacterBias;
+; 52   :     Desirability *= m_dCharacterBias;
 
-	mov	eax, DWORD PTR _this$[ebp]
+	mov	ecx, DWORD PTR _this$[ebp]
 	movsd	xmm0, QWORD PTR _Desirability$[ebp]
-	mulsd	xmm0, QWORD PTR [eax+8]
+	mulsd	xmm0, QWORD PTR [ecx+8]
 	movsd	QWORD PTR _Desirability$[ebp], xmm0
 
-; 36   : 
-; 37   :     // 0~1 범위 클램핑
-; 38   :     if (Desirability > 1.0) Desirability = 1.0;
+; 53   : 
+; 54   :     // 클램핑
+; 55   :     if (Desirability > 1.0) Desirability = 1.0;
 
 	movsd	xmm0, QWORD PTR _Desirability$[ebp]
 	comisd	xmm0, QWORD PTR __real@3ff0000000000000
-	jbe	SHORT $LN4@CalculateD
+	jbe	SHORT $LN6@CalculateD
 	movsd	xmm0, QWORD PTR __real@3ff0000000000000
 	movsd	QWORD PTR _Desirability$[ebp], xmm0
-$LN4@CalculateD:
+$LN6@CalculateD:
 
-; 39   :     if (Desirability < 0.0) Desirability = 0.0;
+; 56   :     if (Desirability < 0.0) Desirability = 0.0;
 
 	xorps	xmm0, xmm0
 	comisd	xmm0, QWORD PTR _Desirability$[ebp]
-	jbe	SHORT $LN5@CalculateD
+	jbe	SHORT $LN7@CalculateD
 	xorps	xmm0, xmm0
 	movsd	QWORD PTR _Desirability$[ebp], xmm0
-$LN5@CalculateD:
+$LN7@CalculateD:
 
-; 40   : 
-; 41   :     return Desirability;
+; 57   : 
+; 58   :     return Desirability;
 
 	fld	QWORD PTR _Desirability$[ebp]
 $LN1@CalculateD:
 
-; 42   : }
+; 59   : }
 
-	add	esp, 28					; 0000001cH
+	push	edx
+	mov	ecx, ebp
+	push	eax
+	lea	edx, DWORD PTR $LN11@CalculateD
+	call	@_RTC_CheckStackVars@8
+	pop	eax
+	pop	edx
+	pop	edi
+	add	esp, 104				; 00000068H
 	cmp	ebp, esp
 	call	__RTC_CheckEsp
 	mov	esp, ebp
 	pop	ebp
 	ret	4
+$LN11@CalculateD:
+	DD	1
+	DD	$LN10@CalculateD
+$LN10@CalculateD:
+	DD	-44					; ffffffd4H
+	DD	16					; 00000010H
+	DD	$LN9@CalculateD
+$LN9@CalculateD:
+	DB	78					; 0000004eH
+	DB	111					; 0000006fH
+	DB	105					; 00000069H
+	DB	115					; 00000073H
+	DB	101					; 00000065H
+	DB	80					; 00000050H
+	DB	111					; 0000006fH
+	DB	115					; 00000073H
+	DB	0
 ?CalculateDesirability@InvestigateNoiseGoal_Evaluator@@UAENPAVRaven_Bot@@@Z ENDP ; InvestigateNoiseGoal_Evaluator::CalculateDesirability
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Raven_Bot.h
+;	COMDAT ?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ
+_TEXT	SEGMENT
+_this$ = -4						; size = 4
+?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ PROC ; Raven_Bot::GetSensoryMem, COMDAT
+; _this$ = ecx
+
+; 211  :   Raven_SensoryMemory* const         GetSensoryMem()const{return m_pSensoryMem;}
+
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	eax, DWORD PTR [eax+156]
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?GetSensoryMem@Raven_Bot@@QBEQAVRaven_SensoryMemory@@XZ ENDP ; Raven_Bot::GetSensoryMem
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Raven_Bot.h
+;	COMDAT ?GetTargetBot@Raven_Bot@@QBEQAV1@XZ
+_TEXT	SEGMENT
+_this$ = -4						; size = 4
+?GetTargetBot@Raven_Bot@@QBEQAV1@XZ PROC		; Raven_Bot::GetTargetBot, COMDAT
+; _this$ = ecx
+
+; 209  :   Raven_Bot* const                   GetTargetBot()const{return m_pTargSys->GetTarget();}
+
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	mov	DWORD PTR [ebp-4], -858993460		; ccccccccH
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	ecx, DWORD PTR [eax+168]
+	call	?GetTarget@Raven_TargetingSystem@@QBEPAVRaven_Bot@@XZ ; Raven_TargetingSystem::GetTarget
+	add	esp, 4
+	cmp	ebp, esp
+	call	__RTC_CheckEsp
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?GetTargetBot@Raven_Bot@@QBEQAV1@XZ ENDP		; Raven_Bot::GetTargetBot
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
 ; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Raven_Bot.h
@@ -21152,6 +21310,27 @@ _this$ = -4						; size = 4
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
 ; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Raven_TargetingSystem.h
+;	COMDAT ?GetTarget@Raven_TargetingSystem@@QBEPAVRaven_Bot@@XZ
+_TEXT	SEGMENT
+_this$ = -4						; size = 4
+?GetTarget@Raven_TargetingSystem@@QBEPAVRaven_Bot@@XZ PROC ; Raven_TargetingSystem::GetTarget, COMDAT
+; _this$ = ecx
+
+; 65   :   Raven_Bot* GetTarget()const{return m_pCurrentTarget;}
+
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	mov	eax, DWORD PTR [eax+4]
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?GetTarget@Raven_TargetingSystem@@QBEPAVRaven_Bot@@XZ ENDP ; Raven_TargetingSystem::GetTarget
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Raven_TargetingSystem.h
 ;	COMDAT ?isTargetPresent@Raven_TargetingSystem@@QBE_NXZ
 _TEXT	SEGMENT
 tv66 = -8						; size = 4
@@ -21178,6 +21357,112 @@ $LN4@isTargetPr:
 	pop	ebp
 	ret	0
 ?isTargetPresent@Raven_TargetingSystem@@QBE_NXZ ENDP	; Raven_TargetingSystem::isTargetPresent
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Common\Game\BaseGameEntity.h
+;	COMDAT ?BRadius@BaseGameEntity@@QBENXZ
+_TEXT	SEGMENT
+_this$ = -4						; size = 4
+?BRadius@BaseGameEntity@@QBENXZ PROC			; BaseGameEntity::BRadius, COMDAT
+; _this$ = ecx
+
+; 92   :   double       BRadius()const{return m_dBoundingRadius;}
+
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	fld	QWORD PTR [eax+56]
+	mov	esp, ebp
+	pop	ebp
+	ret	0
+?BRadius@BaseGameEntity@@QBENXZ ENDP			; BaseGameEntity::BRadius
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Common\Game\BaseGameEntity.h
+;	COMDAT ?Pos@BaseGameEntity@@QBE?AUVector2D@@XZ
+_TEXT	SEGMENT
+_this$ = -4						; size = 4
+___$ReturnUdt$ = 8					; size = 4
+?Pos@BaseGameEntity@@QBE?AUVector2D@@XZ PROC		; BaseGameEntity::Pos, COMDAT
+; _this$ = ecx
+
+; 89   :   Vector2D     Pos()const{return m_vPosition;}
+
+	push	ebp
+	mov	ebp, esp
+	push	ecx
+	mov	DWORD PTR _this$[ebp], ecx
+	mov	eax, DWORD PTR _this$[ebp]
+	add	eax, 24					; 00000018H
+	mov	ecx, DWORD PTR ___$ReturnUdt$[ebp]
+	mov	edx, DWORD PTR [eax]
+	mov	DWORD PTR [ecx], edx
+	mov	edx, DWORD PTR [eax+4]
+	mov	DWORD PTR [ecx+4], edx
+	mov	edx, DWORD PTR [eax+8]
+	mov	DWORD PTR [ecx+8], edx
+	mov	eax, DWORD PTR [eax+12]
+	mov	DWORD PTR [ecx+12], eax
+	mov	eax, DWORD PTR ___$ReturnUdt$[ebp]
+	mov	esp, ebp
+	pop	ebp
+	ret	4
+?Pos@BaseGameEntity@@QBE?AUVector2D@@XZ ENDP		; BaseGameEntity::Pos
+_TEXT	ENDS
+; Function compile flags: /Odtp /RTCsu
+; File C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Common\2D\Vector2D.h
+;	COMDAT ?DistanceSq@Vector2D@@QBENABU1@@Z
+_TEXT	SEGMENT
+tv82 = -28						; size = 8
+_xSeparation$ = -20					; size = 8
+_ySeparation$ = -12					; size = 8
+_this$ = -4						; size = 4
+_v2$ = 8						; size = 4
+?DistanceSq@Vector2D@@QBENABU1@@Z PROC			; Vector2D::DistanceSq, COMDAT
+; _this$ = ecx
+
+; 198  : {
+
+	push	ebp
+	mov	ebp, esp
+	sub	esp, 28					; 0000001cH
+	mov	DWORD PTR _this$[ebp], ecx
+
+; 199  :   double ySeparation = v2.y - y;
+
+	mov	eax, DWORD PTR _v2$[ebp]
+	mov	ecx, DWORD PTR _this$[ebp]
+	movsd	xmm0, QWORD PTR [eax+8]
+	subsd	xmm0, QWORD PTR [ecx+8]
+	movsd	QWORD PTR _ySeparation$[ebp], xmm0
+
+; 200  :   double xSeparation = v2.x - x;
+
+	mov	edx, DWORD PTR _v2$[ebp]
+	mov	eax, DWORD PTR _this$[ebp]
+	movsd	xmm0, QWORD PTR [edx]
+	subsd	xmm0, QWORD PTR [eax]
+	movsd	QWORD PTR _xSeparation$[ebp], xmm0
+
+; 201  : 
+; 202  :   return ySeparation*ySeparation + xSeparation*xSeparation;
+
+	movsd	xmm0, QWORD PTR _ySeparation$[ebp]
+	mulsd	xmm0, QWORD PTR _ySeparation$[ebp]
+	movsd	xmm1, QWORD PTR _xSeparation$[ebp]
+	mulsd	xmm1, QWORD PTR _xSeparation$[ebp]
+	addsd	xmm0, xmm1
+	movsd	QWORD PTR tv82[ebp], xmm0
+	fld	QWORD PTR tv82[ebp]
+
+; 203  : }
+
+	mov	esp, ebp
+	pop	ebp
+	ret	4
+?DistanceSq@Vector2D@@QBENABU1@@Z ENDP			; Vector2D::DistanceSq
 _TEXT	ENDS
 ; Function compile flags: /Odtp /RTCsu
 ; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\ios

@@ -1,5 +1,3 @@
 ﻿cl : 명령줄  warning D9035: 'Gm' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
   InvestigateNoiseGoal_Evaluator.cpp
-  AttackTargetGoal_Evaluator.cpp
-  코드를 생성하고 있습니다...
   Raven.vcxproj -> C:\Users\rpg26\OneDrive\Desktop\학교\AI\AI\Source\VS2010\Buckland_Chapter7 to 10_Raven\Debug\Raven.exe

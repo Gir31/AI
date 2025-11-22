@@ -90,7 +90,41 @@ int Goal_Think::Process()
       m_iStatus = inactive;
     }
   }
+  else if (!m_pOwner->isPossessed())
+  {
+      // 현재 수행 중인 목표가 '중단 가능한' 낮은 우선순위 목표인지 확인합니다.
+      // (예: Explore, Wander 등은 언제든지 멈춰도 됨)
+      bool bInterruptable = false;
+      if (!m_SubGoals.empty())
+      {
+          unsigned int CurrentType = m_SubGoals.front()->GetType();
+          if (CurrentType == goal_explore || CurrentType == goal_wander)
+          {
+              bInterruptable = true;
+          }
+      }
 
+      // 중단 가능한 상태라면, 혹시 아주 높은 점수의 목표(예: 소리 조사, 공격)가 있는지 봅니다.
+      if (bInterruptable)
+      {
+          // 모든 평가자를 돌면서 최고 점수를 확인
+          double BestScore = 0.0;
+          GoalEvaluators::iterator curDes = m_Evaluators.begin();
+          for (curDes; curDes != m_Evaluators.end(); ++curDes)
+          {
+              double score = (*curDes)->CalculateDesirability(m_pOwner);
+              if (score > BestScore) BestScore = score;
+          }
+
+          // [핵심] 만약 최고 점수가 일정 기준(예: 0.5) 이상이라면
+          // Explore(약 0.05점)를 당장 멈추고 새로운 목표를 다시 선정합니다.
+          if (BestScore > 0.5)
+          {
+              Arbitrate(); // 현재 목표를 취소하고, 최고 점수 목표(InvestigateNoise)를 새로 시작
+              return active; // 상태 유지
+          }
+      }
+  }
   return m_iStatus;
 }
 

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\AttackTargetGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AttackTargetGoal_Evaluator.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.cpp",
-              "RelativeDocumentMoniker": "goals\\AttackTargetGoal_Evaluator.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\AttackTargetGoal_Evaluator.cpp",
-              "RelativeToolTip": "goals\\AttackTargetGoal_Evaluator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T18:38:34.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "InvestigateNoiseGoal_Evaluator.cpp",
               "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp",
               "RelativeDocumentMoniker": "goals\\InvestigateNoiseGoal_Evaluator.cpp",
               "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp",
               "RelativeToolTip": "goals\\InvestigateNoiseGoal_Evaluator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvzUAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T18:24:35.239Z",
+              "WhenOpened": "2025-11-22T19:59:37.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Goal_Think.cpp",
+              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
+              "RelativeDocumentMoniker": "goals\\Goal_Think.cpp",
+              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
+              "RelativeToolTip": "goals\\Goal_Think.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAwFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-22T19:52:58.936Z",
               "EditorCaption": ""
             }
           ]
