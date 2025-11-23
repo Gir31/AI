@@ -109,6 +109,7 @@ public:
   //===================================================================
   Vector2D GetMostRecentlySensedPosition() const;
   double GetMostRecentlySensedTime() const;
+  void DismissMostRecentSound();
   //===================================================================
 
   //this method returns a list of all the opponents that have had their

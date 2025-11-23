@@ -241,8 +241,8 @@ void Goal_Think::RenderEvaluations(int left, int top)const
 
     if (left > 400)
     {
-        left = 5;       // 다시 왼쪽 끝으로
-        top += 12;      // 한 줄 아래로 (글자 높이에 맞춰 조정)
+        left = 5; 
+        top += 12;    
     }
   }
 }
@@ -256,5 +256,11 @@ void Goal_Think::Render()
   }
 }
 
-
-   
+bool Goal_Think::isGoalActive(unsigned int GoalType) const
+{
+    if (!m_SubGoals.empty())
+    {
+        return m_SubGoals.front()->GetType() == GoalType;
+    }
+    return false;
+}

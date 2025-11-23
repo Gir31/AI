@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\",
+  "WorkspaceRootPath": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\InvestigateNoiseGoal_Evaluator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Goal_Think.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Raven_Feature.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:goals\\Raven_Feature.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:Raven_SensoryMemory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EC1EBBC4-4F57-4002-856A-5C1BCFBC7BF9}|Raven.vcxproj|solutionrelative:Raven_SensoryMemory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +35,85 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InvestigateNoiseGoal_Evaluator.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp",
-              "RelativeDocumentMoniker": "goals\\InvestigateNoiseGoal_Evaluator.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\InvestigateNoiseGoal_Evaluator.cpp*",
-              "RelativeToolTip": "goals\\InvestigateNoiseGoal_Evaluator.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvzcAAAAvAAAAAAAAAA==",
+              "Title": "Goal_Think.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
+              "RelativeDocumentMoniker": "goals\\Goal_Think.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp*",
+              "RelativeToolTip": "goals\\Goal_Think.cpp*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T19:59:37.899Z",
+              "WhenOpened": "2025-11-23T05:52:47.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Raven_Feature.h",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.h",
+              "RelativeDocumentMoniker": "goals\\Raven_Feature.h",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.h",
+              "RelativeToolTip": "goals\\Raven_Feature.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T05:25:41.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Goal_Think.cpp",
-              "DocumentMoniker": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
-              "RelativeDocumentMoniker": "goals\\Goal_Think.cpp",
-              "ToolTip": "C:\\Users\\rpg26\\OneDrive\\Desktop\\\uD559\uAD50\\AI\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Goal_Think.cpp",
-              "RelativeToolTip": "goals\\Goal_Think.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAwFgAAAAFAAAAAAAAAA==",
+              "Title": "Raven_Feature.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.cpp",
+              "RelativeDocumentMoniker": "goals\\Raven_Feature.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\goals\\Raven_Feature.cpp",
+              "RelativeToolTip": "goals\\Raven_Feature.cpp",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAH4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-22T19:52:58.936Z",
+              "WhenOpened": "2025-11-23T05:25:40.209Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Raven_SensoryMemory.h",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.h",
+              "RelativeDocumentMoniker": "Raven_SensoryMemory.h",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.h",
+              "RelativeToolTip": "Raven_SensoryMemory.h",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-23T05:22:14.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Raven_SensoryMemory.cpp",
+              "DocumentMoniker": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp",
+              "RelativeDocumentMoniker": "Raven_SensoryMemory.cpp",
+              "ToolTip": "C:\\Users\\82102\\Desktop\\\uD559\uAD50\\AI\\Source\\VS2010\\Buckland_Chapter7 to 10_Raven\\Raven_SensoryMemory.cpp",
+              "RelativeToolTip": "Raven_SensoryMemory.cpp",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAAACYBAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-23T05:22:13.806Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 180,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

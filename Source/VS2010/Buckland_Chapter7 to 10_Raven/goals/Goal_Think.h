@@ -60,7 +60,7 @@ public:
   void  RenderEvaluations(int left, int top)const;
   void  Render();
 
-
+  bool isGoalActive(unsigned int GoalType) const;
 };
 
 

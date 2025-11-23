@@ -284,13 +284,12 @@ void  Raven_SensoryMemory::RenderBoxesAroundRecentlySensed()const
 Vector2D Raven_SensoryMemory::GetMostRecentlySensedPosition() const
 {
     double LatestTime = 0;
-    Vector2D LatestPos = Vector2D(0, 0); // 기본값 (없을 경우)
+    Vector2D LatestPos = Vector2D(0, 0); 
     bool bFound = false;
 
     MemoryMap::const_iterator curRecord = m_MemoryMap.begin();
     for (curRecord; curRecord != m_MemoryMap.end(); ++curRecord)
     {
-        // 가장 최근에 감지된 기록을 찾습니다.
         if (curRecord->second.fTimeLastSensed > LatestTime)
         {
             LatestTime = curRecord->second.fTimeLastSensed;
@@ -299,14 +298,12 @@ Vector2D Raven_SensoryMemory::GetMostRecentlySensedPosition() const
         }
     }
 
-    // 기록이 하나라도 있다면 그 위치를 반환, 없다면 봇의 현재 위치(혹은 의미 없는 값) 반환
     if (bFound) return LatestPos;
     return m_pOwner->Pos();
 }
-// Raven_SensoryMemory.cpp
 double Raven_SensoryMemory::GetMostRecentlySensedTime() const
 {
-    double LatestTime = -1000; // 아주 옛날로 초기화
+    double LatestTime = -1000; 
 
     MemoryMap::const_iterator curRecord = m_MemoryMap.begin();
     for (curRecord; curRecord != m_MemoryMap.end(); ++curRecord)
@@ -317,4 +314,24 @@ double Raven_SensoryMemory::GetMostRecentlySensedTime() const
         }
     }
     return LatestTime;
+}
+void Raven_SensoryMemory::DismissMostRecentSound()
+{
+    double LatestTime = -100000;
+    MemoryMap::iterator BestRecord = m_MemoryMap.end();
+    MemoryMap::iterator curRecord;
+
+    for (curRecord = m_MemoryMap.begin(); curRecord != m_MemoryMap.end(); ++curRecord)
+    {
+        if (curRecord->second.fTimeLastSensed > LatestTime)
+        {
+            LatestTime = curRecord->second.fTimeLastSensed;
+            BestRecord = curRecord;
+        }
+    }
+
+    if (BestRecord != m_MemoryMap.end())
+    {
+        BestRecord->second.fTimeLastSensed = -9999.0;
+    }
 }
